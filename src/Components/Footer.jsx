@@ -47,7 +47,7 @@ function Footer() {
                     {/* Social Media Links */}
                     <div className="flex space-x-6">
                         <motion.a
-                            href="https://www.linkedin.com/in/sami3919/"
+                            href="https://linkedin.com/in/SamuelHabtamu"
                             target="_blank"
                             rel="noreferrer"
                             aria-label="LinkedIn profile"
