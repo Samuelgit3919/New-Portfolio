@@ -1,34 +1,37 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"; // For animations
 import { FaGithub } from "react-icons/fa"; // For GitHub icon
 import { VscLiveShare } from "react-icons/vsc"; // For live demo icon
-import { Link, Links } from "react-router";
+import { Link } from "react-router";
+import amazonCloneImage from "../assets/amazon-clone.png"; // Import your images here
+import evangadiForumImage from "../assets/evangadiForum.png"; // Import your images here
 
 function Projects() {
     const projects = [
         {
-            title: "Evaluate",
+            title: "Evangadi_Forum",
             description:
-                "A dynamic web application designed to streamline project evaluation processes. Built with React and Tailwind CSS, this tool allows users to track progress, manage tasks, and visualize data efficiently.",
-            image: "project1.jpg",
-            codeLink: "https://github.com/Samuelgit3919/evaluate", // Replace with actual link
-            demoLink: "https://evaluate-demo.netlify.app", // Replace with actual link
+                "A community Q& A platform where users ask questions, share knowledge, and connect.Built with React, Node.js, and PostgreSQL.Features real - time discussions, voting system, and user reputation tracking",
+            image: evangadiForumImage,
+            codeLink: "https://github.com/Samuelgit3919/Forum-Frontend", // Replace with actual link
+            demoLink: "https://forum-frontend-na5q.vercel.app/", // Replace with actual link
         },
         {
-            title: "GPT-3 Showcase",
+            title: "Amazon Clone",
             description:
-                "A showcase website demonstrating the capabilities of GPT-3, a state-of-the-art language model by OpenAI. This project features interactive text generation and is built using React, Node.js, and the OpenAI API.",
-            image: "project2.jpg",
-            codeLink: "https://github.com/Samuelgit3919/gpt3-showcase", // Replace with actual link
-            demoLink: "https://gpt3-showcase-demo.netlify.app", // Replace with actual link
+                "Functional Amazon clone with product browsing, cart system, and payments. Built with React, Firebase, and Stripe API. Features user authentication, product search, and order management.",
+            image: amazonCloneImage,
+            codeLink: "https://github.com/Samuelgit3919/Amazon-clone", // Replace with actual link
+            demoLink: "https://samuel-second-amazon-clone.netlify.app/", // Replace with actual link
         },
-        {
-            title: "Restaurant Platform",
-            description:
-                "An engaging online restaurant platform featuring a mobile-friendly menu, financial insights, and virtual dining experiences. Built with Next.js and MongoDB, it ensures seamless performance across all devices.",
-            image: "project3.jpg",
-            codeLink: "https://github.com/Samuelgit3919/restaurant-platform", // Replace with actual link
-            demoLink: "https://restaurant-platform-demo.netlify.app", // Replace with actual link
-        },
+        // {
+        //     title: "Restaurant Platform",
+        //     description:
+        //         "An engaging online restaurant platform featuring a mobile-friendly menu, financial insights, and virtual dining experiences. Built with Next.js and MongoDB, it ensures seamless performance across all devices.",
+        //     image: "project3.jpg",
+        //     codeLink: "https://github.com/Samuelgit3919/restaurant-platform", // Replace with actual link
+        //     demoLink: "https://restaurant-platform-demo.netlify.app", // Replace with actual link
+        // },
     ];
 
     // Animation variants for project cards
@@ -70,9 +73,17 @@ function Projects() {
                             {/* Image Section */}
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <div className="relative group">
-                                    <div className="h-64 rounded-lg bg-gradient-to-br from-blue-200 to-blue-400 shadow-lg transform group-hover:scale-105 transition-transform duration-300"></div>
+                                    <div className="h-64 rounded-lg bg-gradient-to-br from-blue-200 to-blue-400 shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                                        <div className="h-64 w-full bg-gradient-to-br from-blue-200 to-blue-400 overflow-hidden">
+                                            <img
+                                                src={project.image}
+                                                alt={project.title}
+                                                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-300"
+                                            />
+                                        </div>
+                                    </div>
                                     {/* Overlay for hover effect */}
-                                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 rounded-lg transition-opacity duration-300 flex items-center justify-center">
+                                    <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-30 rounded-lg transition-opacity duration-300 flex items-center justify-center">
                                         <span className="text-white text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                             View Project
                                         </span>
