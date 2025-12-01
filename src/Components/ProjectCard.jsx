@@ -8,7 +8,9 @@ import evangadiForumImage from "../assets/evangadiForum.png"; // Import your ima
 import design from "../assets/closet.png"; // Import your images here
 import portfolio from "../assets/portfolio.png"
 import realState from "../assets/realState.png"
+import food from "../assets/food-del.png"
 import { i, title } from "framer-motion/client";
+
 
 function Projects() {
     const projects = [
@@ -19,6 +21,14 @@ function Projects() {
             image: realState,
             codeLink: "https://github.com/Samuelgit3919/RealState-website.git", // Replace with actual link
             demoLink: "https://real-state-website-drab.vercel.app/", // Replace with actual link
+        },
+        {
+            title: "Food Delivery App",
+            description:
+                "A dynamic food delivery application that allows users to explore local restaurants, view menus, and place orders for delivery or pickup. Built with React Native for cross-platform compatibility and Node.js for backend services, it includes real-time order tracking, user reviews, and secure payment processing.",
+            image: food,
+            codeLink: "/", // Replace with actual link
+            demoLink: "https://food-delivery-web-app-gold.vercel.app/", // Replace with actual link
         },
 
         {
