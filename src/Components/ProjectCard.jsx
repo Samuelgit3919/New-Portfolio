@@ -5,33 +5,39 @@ import { VscLiveShare } from "react-icons/vsc"; // For live demo icon
 import { Link } from "react-router";
 import amazonCloneImage from "../assets/amazon-clone.png"; // Import your images here
 import evangadiForumImage from "../assets/evangadiForum.png"; // Import your images here
+import design from "../assets/closet.png"; // Import your images here
+import portfolio from "../assets/portfolio.png"
+import realState from "../assets/realState.png"
+import { i, title } from "framer-motion/client";
 
 function Projects() {
     const projects = [
         {
-            title: "Evangadi_Forum",
+            title: "Real State Website",
             description:
-                "A community Q& A platform where users ask questions, share knowledge, and connect.Built with React, Node.js, and PostgreSQL.Features real - time discussions, voting system, and user reputation tracking",
-            image: evangadiForumImage,
-            codeLink: "https://github.com/Samuelgit3919/Forum-Frontend", // Replace with actual link
-            demoLink: "https://forum-frontend-na5q.vercel.app/", // Replace with actual link
+                "A comprehensive real estate platform enabling users to browse, search, and filter property listings. Built with React for the frontend and Firebase for backend services, it features user authentication, property management, and responsive design for seamless access across devices.",
+            image: realState,
+            codeLink: "https://github.com/Samuelgit3919/RealState-website.git", // Replace with actual link
+            demoLink: "https://real-state-website-drab.vercel.app/", // Replace with actual link
         },
+
         {
-            title: "Amazon Clone",
+            title: "Closet Design measurement App",
             description:
-                "Functional Amazon clone with product browsing, cart system, and payments. Built with React, Firebase, and Stripe API. Features user authentication, product search, and order management.",
-            image: amazonCloneImage,
-            codeLink: "https://github.com/Samuelgit3919/Amazon-clone", // Replace with actual link
-            demoLink: "https://samuel-second-amazon-clone.netlify.app/", // Replace with actual link
+                "A user-friendly web application that allows users to input their room dimensions and design preferences to generate customized closet designs. Built with React for the frontend and Node.js for the backend, it features an intuitive interface, real-time design previews, and options to save and share designs.",
+            image: design,
+            codeLink: "https://github.com/Samuelgit3919/demo-marketing-app", // Replace with actual link
+            demoLink: "https://demo-marketing-app-5pte.vercel.app/", // Replace with actual link
         },
-        // {
-        //     title: "Restaurant Platform",
-        //     description:
-        //         "An engaging online restaurant platform featuring a mobile-friendly menu, financial insights, and virtual dining experiences. Built with Next.js and MongoDB, it ensures seamless performance across all devices.",
-        //     image: "project3.jpg",
-        //     codeLink: "https://github.com/Samuelgit3919/restaurant-platform", // Replace with actual link
-        //     demoLink: "https://restaurant-platform-demo.netlify.app", // Replace with actual link
-        // },
+
+        {
+            title: "Portfolio Website",
+            description:
+                "A sleek and modern portfolio website to showcase projects and skills. Built with React and Tailwind CSS, it features smooth animations, responsive design, and easy navigation to highlight professional achievements.",
+            image: portfolio, // Replace with actual image link
+            codeLink: "https://github.com/Samuelgit3919/upwork_job.git", // Replace with actual link
+            demoLink: "https://galajm.com/", // Replace with actual link
+        }
     ];
 
     // Animation variants for project cards
